@@ -1,8 +1,204 @@
-body{
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    margin: 0;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1 {
+    text-align: center;
+    color: #e63946;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #263238;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #1565c0;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+p {
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    width: 18rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    /* Propiedad solicitada por la tarea */
+    position: relative;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto cuando pasas el mouse */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Título de cada Pokémon */
+
+.card h2 {
+    color: #e63946;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Imágenes */
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    padding: 15px;
+
+    /* Propiedad solicitada por la tarea */
+    display: block;
+}
+
+/* Texto de las Cards */
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 0.95rem;
     text-align: center;
 }
-h1{
-    color: #333;
-    font-family: Arial, sans-serif;
-    text-align: center;
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    background-color: #263238;
+    color: white;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e63946;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: white;
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   BOTÓN DE BÚSQUEDA
+========================= */
+
+.navbar .btn-outline-success {
+    border-color: #e63946;
+    color: #e63946;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #e63946;
+    border-color: #e63946;
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 18rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        padding: 0 20px;
+    }
 }
