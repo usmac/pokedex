@@ -93,6 +93,8 @@
     <p>En esta Pokédex, podrás encontrar información detallada sobre una amplia variedad de Pokémon, incluyendo sus tipos, habilidades, estadísticas y evolución. ¡Descubre todo sobre tus Pokémon favoritos!</p>
     <!--*Fin de sección de información*-->
 
+    <h1>Sobre Pokémon y la Pokédex</h1>
+
     <!--*Grid de Pokémon*-->
     <div class="container text-center">
   <div class="row">
@@ -100,9 +102,10 @@
         
     <!--*Card 1-->
       <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+        <h2>Charmander</h2>
+  <img src="/assets/charmander.png" class="card-img-top" alt="charmander">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">La llama de su cola indica su fuerza vital. Si está débil, la llama arderá más tenue.</p>
   </div>
 </div>
     <!--*Fin de Card 1-->
@@ -111,9 +114,10 @@
 
     <!--*Card 2-->
       <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+        <h2>Bulbasaur</h2>
+  <img src="/assets/bulbasaur.png" class="card-img-top" alt="bulbasaur">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">Una semilla ha crecido sobre su espalda. Al absorber nutrientes, crece más fuerte.</p>
   </div>
 </div>
     <!--*Fin de Card 2-->
@@ -123,9 +127,10 @@
 
     <!--*Card 3-->
       <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+        <h2>Squirtle</h2>
+  <img src="/assets/squirtle.png" class="card-img-top" alt="squirtle">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">Si se siente amenazado, eleva su cola y dispara agua a presión.</p>
   </div>
 </div>
       <!--*Fin de Card 3-->
@@ -134,6 +139,47 @@
   </div>
   </div>
   <!--*Fin de grid de Pokémon*-->
+
+  <!--*Acordion*-->
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Primera Generación
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Primera Generación</strong> introdujo la región de Kanto y los primeros 151 Pokémon originales en los juegos Pokémon Rojo y Azul (1996). Entre sus íconos se encuentran Pikachu, Charizard, Mewtwo y los iniciales Bulbasaur, Charmander y Squirtle.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Segunda Generación
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Segunda Generación</strong> introdujo la región de Johto y los siguientes 100 Pokémon en los juegos Pokémon Verde y Rojo (1998). Entre sus íconos se encuentran Meganium, Typhlosion y Feraligatr.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Tercera Generación
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tercera Generación</strong> introdujo la región de Hoenn y los siguientes 135 Pokémon en los juegos Pokémon Amarillo y Rosa (2000). Entre sus íconos se encuentran Blaziken, Swampert y Torterra.
+      </div>
+    </div>
+  </div>
+</div>
+  <!--*Fin de Acordion*-->
     <!-- Aquí construiremos la página -->
 
 
